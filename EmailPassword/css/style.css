@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.form-control{
+    width:150% !important;
+}
+.btn{
+    width: 150% !important;
+}
+#errorList h3{
+    color: red;
+    font-size:14px;
+}
+#errorList li{
+    color: red;
+    font-size:12px;
+}
+.myerror{
+    display: none;
+}
