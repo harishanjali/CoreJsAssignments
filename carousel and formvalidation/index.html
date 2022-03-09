@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="carosel-container">
+        <img style="height:400px;width:400px" id="image" src="images/4d9be86a0abb5fd3e0264cbdc3a7850d1.png" alt="image">
+    </div>
+    <h1>Form validation</h1>
+    <form id="myForm" action="success.html" onsubmit = "return validateForm()">
+        <table>
+            <tr><td><label for="fname">FirstName:</label></td>
+                <td><input id="fname" name="myname" type="text" onblur="validate1()"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="error1" class="error"></td>
+            </tr>
+            <tr><td><label for="lname">LastName:</label></td>
+                <td><input id="lname" type="text" onblur="validate2()"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="error2" class="error"></td>
+            </tr>
+            <tr><td><label for="uname">UserName:</label></td>
+                <td><input type="text" id="uname" 
+                    onblur="validate3()"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="error3" class="error"></td>
+            </tr>
+            <tr><td><label for="pword">Password:</label></td>
+                <td><input type="password" id="pword" 
+                     onblur="validate4()"></td>
+                <td><input type="button" id="showPswd" value="showPwsd"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="error4" class="error"></td>
+            </tr>
+            <tr><td><label for="cword">Confirm Password:</label></td>
+                <td><input type="password" id="cword" 
+                    onblur="validate5()"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="error5" class="error"></td>
+            </tr>
+            <tr><td><input type="submit" value="Register"></td><td><input type="reset" value="Reset"></td></tr>
+        </table>
+    </form>
+    <script src="JS/carousel.js"></script>
+</body>
+</html>
